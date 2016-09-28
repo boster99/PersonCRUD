@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+This defines the layout for the activity in which PersonModel objects are added or updated. See
+also: AddEditPersonActivity.
+
+~ Copyright (c) 2016 C. Todd Cook. All rights reserved.
+-->
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".AddEditPersonActivity">
+
+  <RelativeLayout
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="#4FC3F7"
+      app:layout_behavior="@string/appbar_scrolling_view_behavior"
+      tools:context=".AddEditPersonActivity"
+      tools:showIn="@layout/activity_add_edit_person">
+
+    <!-- Following are labels and TextViews for entering/editing Person details -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+
+      <!-- FIRST NAME -->
+      <LinearLayout
+          style="@style/LabelDataPairStyle">
+
+        <TextView
+            style="@style/DetailLabelStyle"
+            android:labelFor="@+id/edit_person_first_name"
+            android:text="@string/label_first_name"/>
+
+        <EditText
+            android:id="@+id/edit_person_first_name"
+            style="@style/EditDetailStyle"
+            android:imeOptions="actionNext"
+            android:inputType="textAutoComplete|textCapWords"/>
+
+      </LinearLayout>
+
+
+      <!-- LAST NAME -->
+      <LinearLayout
+          style="@style/LabelDataPairStyle">
+
+        <TextView
+            style="@style/DetailLabelStyle"
+            android:labelFor="@+id/edit_person_last_name"
+            android:text="@string/label_last_name"/>
+
+        <EditText
+            android:id="@+id/edit_person_last_name"
+            style="@style/EditDetailStyle"
+            android:imeOptions="actionNext"
+            android:inputType="textAutoComplete|textCapWords"/>
+
+      </LinearLayout>
+
+
+      <!-- BIRTH DATE -->
+      <LinearLayout
+          style="@style/LabelDataPairStyle">
+
+        <TextView
+            style="@style/DetailLabelStyle"
+            android:labelFor="@+id/edit_person_birth_date"
+            android:text="@string/label_date_of_birth"/>
+
+        <!-- :focusable and :focusableInTouchMode are here so setError() works -->
+        <TextView
+            android:id="@+id/edit_person_birth_date"
+            style="@style/EditDetailStyle"
+            android:focusable="true"
+            android:focusableInTouchMode="true"/>
+
+      </LinearLayout>
+
+
+      <!-- ZIP CODE -->
+      <LinearLayout
+          style="@style/LabelDataPairStyle">
+
+        <TextView
+            style="@style/DetailLabelStyle"
+            android:labelFor="@+id/edit_person_zip_code"
+            android:text="@string/label_zip_code"/>
+
+        <EditText
+            android:id="@+id/edit_person_zip_code"
+            style="@style/EditDetailStyle"
+            android:imeOptions="actionDone"
+            android:inputType="number"/>
+
+      </LinearLayout>
+    </LinearLayout>
+
+    <!-- SAVE and CANCEL buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+      <Button
+          style="?android:attr/buttonBarButtonStyle"
+          android:layout_width="96dp"
+          android:layout_height="wrap_content"
+          android:layout_margin="8dp"
+          android:onClick="cancelEdits"
+          android:text="@string/btn_cancel"/>
+
+      <Button
+          style="?android:attr/buttonBarButtonStyle"
+          android:layout_width="96dp"
+          android:layout_height="wrap_content"
+          android:layout_margin="8dp"
+          android:onClick="savePerson"
+          android:text="@string/btn_save"/>
+
+    </LinearLayout>
+  </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

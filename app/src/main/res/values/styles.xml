@@ -1,0 +1,92 @@
+<resources>
+
+  <!-- Base application theme. -->
+  <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <!-- Customize your theme here. -->
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+  </style>
+
+  <style name="AppTheme.NoActionBar">
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
+  </style>
+
+  <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+  <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+  <style name="RowStyle">
+    <item name="android:layout_marginRight">4dp</item>
+    <item name="android:layout_marginLeft">4dp</item>
+    <item name="android:layout_marginTop">2dp</item>
+    <item name="android:layout_marginBottom">2dp</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:orientation">horizontal</item>
+    <item name="android:paddingTop">2dp</item>
+    <item name="android:paddingBottom">2dp</item>
+  </style>
+
+  <style name="ColumnHeaderStyle">
+    <item name="android:gravity">center</item>
+    <item name="android:textAllCaps">true</item>
+    <item name="android:textSize">16sp</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_width">0dp</item>
+    <item name="android:layout_margin">2dp</item>
+    <item name="android:background">@color/columnHeaderBackground</item>
+    <item name="android:textColor">@color/columnTextColor</item>
+  </style>
+
+  <style name="DataTextStyle">
+    <item name="android:textSize">15sp</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_width">0dp</item>
+    <item name="android:layout_margin">2dp</item>
+    <item name="android:textColor">@color/listTextColor</item>
+  </style>
+
+  <style name="LabelDataPairStyle">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_marginTop">5dp</item>
+    <item name="android:layout_gravity">center_vertical</item>
+    <item name="android:orientation">horizontal</item>
+  </style>
+
+  <style name="DetailLabelStyle">
+    <item name="android:textSize">15sp</item>
+    <item name="android:layout_width">0dp</item>
+    <item name="android:layout_weight">3</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_margin">4dp</item>
+    <item name="android:padding">4dp</item>
+    <item name="android:textColor">@android:color/black</item>
+    <item name="android:textAllCaps">true</item>
+    <item name="android:gravity">right</item>
+  </style>
+
+  <style name="DetailParentStyle">
+    <item name="android:textSize">15sp</item>
+    <item name="android:layout_width">0dp</item>
+    <item name="android:layout_weight">5</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_margin">4dp</item>
+    <item name="android:padding">4dp</item>
+    <item name="android:gravity">start</item>
+    <item name="android:singleLine">true</item>
+  </style>
+
+  <style name="EditDetailStyle" parent="DetailParentStyle">
+    <item name="android:textColor">@android:color/black</item>
+    <item name="android:background">#B3E5FC</item>
+  </style>
+
+  <style name="ViewDetailStyle" parent="@style/DetailParentStyle">
+    <item name="android:textColor">@android:color/black</item>
+    <item name="android:background">#B0BEC5</item>
+  </style>
+
+</resources>

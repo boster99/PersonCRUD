@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+This defines the layout of each row of data of PersonModel objects displayed in MainActivity. See
+also, the class PersonRow.
+
+~ Copyright (c) 2016 C. Todd Cook. All rights reserved.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/RowStyle"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal"
+              android:paddingBottom="4dp"
+              android:paddingTop="4dp">
+
+  <TextView
+      android:id="@+id/col_first_name"
+      style="@style/DataTextStyle"
+      android:layout_weight="4"
+      android:gravity="start"
+      android:text="@string/header_first_name"/>
+
+  <TextView
+      android:id="@+id/col_last_name"
+      style="@style/DataTextStyle"
+      android:layout_weight="4"
+      android:gravity="start"
+      android:text="@string/header_last_name"/>
+
+  <TextView
+      android:id="@+id/col_birth_date"
+      style="@style/DataTextStyle"
+      android:layout_weight="5"
+      android:gravity="end"
+      android:text="@string/header_birth_date"/>
+
+  <TextView
+      android:id="@+id/col_zip_code"
+      style="@style/DataTextStyle"
+      android:layout_weight="4"
+      android:gravity="end"
+      android:text="@string/header_zip_code"/>
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<resources>
+  <string name="app_name">Person CRUD</string>
+
+
+  <!-- Strings related to the Login activity -->
+  <string name="title_activity_login">Sign in to Person CRUD</string>
+  <string name="email_input_hint">Email</string>
+  <string name="password_input_hint">Password</string>
+  <string name="action_sign_in">Sign In</string>
+  <string name="action_register">Register New Account</string>
+  <string name="action_sign_in_short">Sign in</string>
+  <string name="action_sign_out">Sign out</string>
+
+  <string name="error_email_required">Uhm … did you forget something? You really have to give us
+    an email address.</string>
+  <string name="error_invalid_email">Is this really an email address? It doesn\'t look like
+    one.</string>
+  <string name="error_short_password">This password is just plain too short. It must be at least 8
+    characters long.</string>
+  <string name="error_incorrect_password">Oh, dang. This password is incorrect. It must include all
+    of the following:\n• at least one lower-case letter\n• at least one upper-case
+    letter\n• at least one numeric digit\n• and at least one symbol.</string>
+
+  <string name="login_failed">Login failed</string>
+  <string name="progress_login">Attempting login…</string>
+  <string name="progress_registration">Attempting registration…</string>
+
+
+  <!-- Strings containing column titles on the Main activity -->
+  <string name="header_first_name">First Name</string>
+  <string name="header_last_name">Last Name</string>
+  <string name="header_birth_date">Date of Birth</string>
+  <string name="header_zip_code">Zip\nCode</string>
+
+
+  <!-- Strings for labels and buttons on the Edit Person and View Person activities -->
+  <string name="btn_save">Save</string>
+  <string name="btn_cancel">Cancel</string>
+  <string name="label_first_name">First Name</string>
+  <string name="label_last_name">Last Name</string>
+  <string name="label_date_of_birth">Birth Date</string>
+  <string name="label_zip_code">Zip Code</string>
+  <string name="label_last_edited_by">Last Edited By</string>
+  <string name="label_last_edited_dt">Last Edited</string>
+  <string name="title_edit_person">Edit Details</string>
+
+
+  <!-- Strings for menu items -->
+  <string name="btn_edit">Edit</string>
+  <string name="btn_delete">Delete</string>
+
+
+  <!-- Strings related to MainActivity -->
+  <string name="delete_alert_title">Delete Person?</string>
+  <string name="delete_alert_message">Deleting a Person cannot be undone. Are you sure you want to
+    do this?</string>
+  <string name="delete_alert_btn_yes">Yes, delete it</string>
+  <string name="delete_alert_btn_no">No, never mind</string>
+
+
+  <!-- Related to the Person Pager -->
+  <string name="title_view_person">View Details</string>
+
+
+</resources>

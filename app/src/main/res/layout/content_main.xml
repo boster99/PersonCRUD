@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+This layout is contained within activity_main.xml. It has two main components: column headers,
+and a ListView which displays rows of data.
+
+~ Copyright (c) 2016 C. Todd Cook. All rights reserved.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/listBackground"
+              android:orientation="vertical"
+              app:layout_behavior="@string/appbar_scrolling_view_behavior"
+              tools:context=".MainActivity"
+              tools:showIn="@layout/activity_main">
+
+  <!-- This LinearLayout contains only the column headers for the rows of Persons -->
+  <LinearLayout
+      style="@style/RowStyle">
+
+    <TextView
+        android:id="@+id/col_first_name"
+        style="@style/ColumnHeaderStyle"
+        android:layout_weight="4"
+        android:text="@string/header_first_name"/>
+
+    <TextView
+        android:id="@+id/col_last_name"
+        style="@style/ColumnHeaderStyle"
+        android:layout_weight="4"
+        android:text="@string/header_last_name"/>
+
+    <TextView
+        android:id="@+id/col_birth_date"
+        style="@style/ColumnHeaderStyle"
+        android:layout_weight="5"
+        android:text="@string/header_birth_date"/>
+
+    <TextView
+        android:id="@+id/col_zip_code"
+        style="@style/ColumnHeaderStyle"
+        android:layout_weight="4"
+        android:text="@string/header_zip_code"/>
+
+  </LinearLayout>
+
+  <!--
+  This ListView will hold (via an ArrayAdapter) rows of Persons. The ArrayAdapter is setup in
+  MainActivity.
+  -->
+  <ListView
+      android:id="@+id/PersonList"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_margin="4dp">
+  </ListView>
+
+</LinearLayout>

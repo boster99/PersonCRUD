@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1079483655906",
+    "firebase_url": "https://person-crud.firebaseio.com",
+    "project_id": "person-crud",
+    "storage_bucket": "person-crud.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1079483655906:android:ee97d582861c688b",
+        "android_client_info": {
+          "package_name": "com.ctoddcook.android.personcrud"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1079483655906-j3ger2heu4h3684l1hkuhj1p88gm9nbf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ctoddcook.android.personcrud",
+            "certificate_hash": "5363EBA264012A7D771003D9503E1BE21B098F23"
+          }
+        },
+        {
+          "client_id": "1079483655906-b8imd1r6n8vlk4f79v6broen10i9enif.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAG1srlOELfguSNvuz0FnywLVtSo8AAgC0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1079483655906-b8imd1r6n8vlk4f79v6broen10i9enif.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

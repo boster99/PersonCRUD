@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+This layout defines the labels and data fields to display all of the details for a single
+PersonModel object. This layout file is used by the class PersonDetailFragment.
+
+~ Copyright (c) 2016 C. Todd Cook. All rights reserved.
+-->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+  <!-- Label and Display of the FIRST NAME -->
+  <LinearLayout
+      style="@style/LabelDataPairStyle">
+
+    <TextView
+        style="@style/DetailLabelStyle"
+        android:paddingBottom="8dp"
+        android:text="@string/label_first_name"/>
+
+    <TextView
+        android:id="@+id/view_person_first_name"
+        style="@style/ViewDetailStyle"/>
+
+  </LinearLayout>
+
+  <!-- Label and Display of the LAST NAME -->
+  <LinearLayout
+      style="@style/LabelDataPairStyle">
+
+    <TextView
+        style="@style/DetailLabelStyle"
+        android:text="@string/label_last_name"/>
+
+    <TextView
+        android:id="@+id/view_person_last_name"
+        style="@style/ViewDetailStyle"/>
+
+  </LinearLayout>
+
+  <!-- Label and Display of the BIRTH DATE -->
+  <LinearLayout
+      style="@style/LabelDataPairStyle">
+
+    <TextView
+        style="@style/DetailLabelStyle"
+        android:text="@string/label_date_of_birth"/>
+
+    <TextView
+        android:id="@+id/view_person_birth_date"
+        style="@style/ViewDetailStyle"/>
+
+  </LinearLayout>
+
+  <!-- Label and Display of the ZIP CODE -->
+  <LinearLayout
+      style="@style/LabelDataPairStyle">
+
+    <TextView
+        style="@style/DetailLabelStyle"
+        android:text="@string/label_zip_code"/>
+
+    <TextView
+        android:id="@+id/view_person_zip_code"
+        style="@style/ViewDetailStyle"/>
+
+  </LinearLayout>
+
+
+  <!-- A dividing line between top and bottom -->
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="4dp"
+      android:layout_marginBottom="8dp"
+      android:layout_marginTop="8dp"
+      android:background="@color/divider"/>
+
+
+  <!-- Label and Display of the UPDATED DATETIME -->
+  <LinearLayout
+      style="@style/LabelDataPairStyle">
+
+    <TextView
+        style="@style/DetailLabelStyle"
+        android:text="@string/label_last_edited_dt"/>
+
+    <TextView
+        android:id="@+id/view_person_dt_updated"
+        style="@style/ViewDetailStyle"/>
+
+  </LinearLayout>
+
+  <!-- Label and Display of the LAST EDITED-BY USER -->
+  <LinearLayout
+      style="@style/LabelDataPairStyle">
+
+    <TextView
+        style="@style/DetailLabelStyle"
+        android:text="@string/label_last_edited_by"/>
+
+    <TextView
+        android:id="@+id/view_person_updated_by"
+        style="@style/ViewDetailStyle"/>
+
+  </LinearLayout>
+
+</LinearLayout>
